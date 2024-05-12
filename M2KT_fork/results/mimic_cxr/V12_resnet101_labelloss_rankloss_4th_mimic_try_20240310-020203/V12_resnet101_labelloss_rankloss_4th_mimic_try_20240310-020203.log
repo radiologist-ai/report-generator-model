@@ -1,0 +1,22 @@
+03-09 11:02:03-INFO:Logging Dir: results\mimic_cxr\V12_resnet101_labelloss_rankloss_4th_mimic_try_20240310-020203
+03-09 11:02:03-INFO:Visual Extractor:resnet101   d_vf: 2048
+03-09 11:02:03-INFO:==>> Set GPU devices: 0
+03-09 11:02:03-INFO:Namespace(image_dir='data/mimic/r2gen/images/images224/files', ann_path='data/mimic/r2gen/images/images224/annotation.json', label_path='data/mimic/finding/chexpert_labeled.csv', image_size=256, crop_size=224, dataset_name='mimic_cxr', max_seq_length=80, threshold=3, num_workers=4, batch_size=16, version='12', visual_extractor='resnet101', visual_extractor_pretrained=True, pretrain_cnn_file=None, d_model=512, d_ff=512, d_vf=2048, num_heads=8, num_memory_heads=8, num_layers=3, num_labels=14, dropout=0.1, logit_layers=1, bos_idx=0, eos_idx=0, pad_idx=0, use_bn=0, drop_prob_lm=0.1, sample_method='beam_search', beam_size=3, temperature=1.0, sample_n=1, group_size=1, output_logsoftmax=1, decoding_constraint=0, block_trigrams=1, n_gpu=1, epochs=30, save_dir='results\\mimic_cxr\\V12_resnet101_labelloss_rankloss_4th_mimic_try_20240310-020203', expe_name='4th_mimic_try', record_dir='records/', save_period=1, monitor_mode='max', monitor_metric='BLEU_4', early_stop=50, label_smoothing=0.1, alpha=0.5, grad_clip=5, test_steps=500, label_loss=True, rank_loss=True, optim='Adam', lr_ve=5e-05, lr_ed=0.0001, weight_decay=5e-05, amsgrad=True, lr_scheduler='StepLR', step_size=1, gamma=0.8, seed=456789, gpu='0', resume=None, num_slots=60, rm_num_heads=8, rm_d_model=512, cfg='config/mimic_resnet.yml', set_cfgs=[])
+03-09 11:02:14-INFO:Model name: LAMRGModel_v12 	Model Layers:3
+03-09 11:02:16-INFO:==>> Model lr: 0.0001, Visual Encoder lr: 5e-05
+03-09 12:22:31-INFO:Epoch [1/30] - results\mimic_cxr\V12_resnet101_labelloss_rankloss_4th_mimic_try_20240310-020203
+03-09 12:22:31-INFO:VAL ||| Epoch: 1|||train_loss: 2.605||| BLEU_1: 0.2358 |||BLEU_2: 0.1206 |||BLEU_3: 0.06433 |||BLEU_4: 0.03982 |||CIDEr: 0.03267 |||ROUGE_L: 0.2061
+03-09 12:22:31-INFO:TEST || Epoch: 1|||train_loss: 2.605||| BLEU_1: 0.249 |||BLEU_2: 0.1278 |||BLEU_3: 0.06922 |||BLEU_4: 0.0441 |||CIDEr: 0.0442 |||ROUGE_L: 0.2076
+03-09 12:22:46-INFO:Saving current best: model_best.pth ...
+03-09 12:22:46-INFO:==>> Model lr: 8e-05, Visual Encoder lr: 4e-05
+03-09 13:25:07-INFO:=> User Stop!
+03-09 13:25:14-INFO:Saved checkpint!
+03-09 13:25:14-INFO:
+********************Best results********************
+03-09 13:25:14-INFO:Best results (w.r.t BLEU_4) in validation set:
+03-09 13:25:14-INFO:VAL ||| Epoch: 1|||train_loss: 2.605||| BLEU_1: 0.2358 |||BLEU_2: 0.1206 |||BLEU_3: 0.06433 |||BLEU_4: 0.03982 |||CIDEr: 0.03267 |||ROUGE_L: 0.2061
+03-09 13:25:14-INFO:TEST || Epoch: 1|||train_loss: 2.605||| BLEU_1: 0.249 |||BLEU_2: 0.1278 |||BLEU_3: 0.06922 |||BLEU_4: 0.0441 |||CIDEr: 0.0442 |||ROUGE_L: 0.2076
+03-09 13:25:14-INFO:Best results (w.r.t BLEU_4) in test set:
+03-09 13:25:14-INFO:VAL ||| Epoch: 1|||train_loss: 2.605||| BLEU_1: 0.2358 |||BLEU_2: 0.1206 |||BLEU_3: 0.06433 |||BLEU_4: 0.03982 |||CIDEr: 0.03267 |||ROUGE_L: 0.2061
+03-09 13:25:14-INFO:TEST || Epoch: 1|||train_loss: 2.605||| BLEU_1: 0.249 |||BLEU_2: 0.1278 |||BLEU_3: 0.06922 |||BLEU_4: 0.0441 |||CIDEr: 0.0442 |||ROUGE_L: 0.2076
+03-09 13:25:16-INFO:Namespace(image_dir='data/mimic/r2gen/images/images224/files', ann_path='data/mimic/r2gen/images/images224/annotation.json', label_path='data/mimic/finding/chexpert_labeled.csv', image_size=256, crop_size=224, dataset_name='mimic_cxr', max_seq_length=80, threshold=3, num_workers=4, batch_size=16, version='12', visual_extractor='resnet101', visual_extractor_pretrained=True, pretrain_cnn_file=None, d_model=512, d_ff=512, d_vf=2048, num_heads=8, num_memory_heads=8, num_layers=3, num_labels=14, dropout=0.1, logit_layers=1, bos_idx=0, eos_idx=0, pad_idx=0, use_bn=0, drop_prob_lm=0.1, sample_method='beam_search', beam_size=3, temperature=1.0, sample_n=1, group_size=1, output_logsoftmax=1, decoding_constraint=0, block_trigrams=1, n_gpu=1, epochs=30, save_dir='results\\mimic_cxr\\V12_resnet101_labelloss_rankloss_4th_mimic_try_20240310-020203', expe_name='4th_mimic_try', record_dir='records/', save_period=1, monitor_mode='max', monitor_metric='BLEU_4', early_stop=50, label_smoothing=0.1, alpha=0.5, grad_clip=5, test_steps=500, label_loss=True, rank_loss=True, optim='Adam', lr_ve=5e-05, lr_ed=0.0001, weight_decay=5e-05, amsgrad=True, lr_scheduler='StepLR', step_size=1, gamma=0.8, seed=456789, gpu='0', resume=None, num_slots=60, rm_num_heads=8, rm_d_model=512, cfg='config/mimic_resnet.yml', set_cfgs=[])

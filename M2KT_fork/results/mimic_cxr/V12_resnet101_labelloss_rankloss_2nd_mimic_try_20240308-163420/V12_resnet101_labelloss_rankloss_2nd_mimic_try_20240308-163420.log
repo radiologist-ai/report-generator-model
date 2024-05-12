@@ -1,0 +1,15 @@
+03-08 01:34:20-INFO:Logging Dir: results\mimic_cxr\V12_resnet101_labelloss_rankloss_2nd_mimic_try_20240308-163420
+03-08 01:34:20-INFO:Visual Extractor:resnet101   d_vf: 2048
+03-08 01:34:20-INFO:==>> Set GPU devices: 0
+03-08 01:34:20-INFO:Namespace(image_dir='data/mimic/r2gen/images/images224/files', ann_path='data/mimic/r2gen/images/images224/annotation.json', label_path='data/mimic/finding/chexpert_labeled.csv', image_size=256, crop_size=224, dataset_name='mimic_cxr', max_seq_length=80, threshold=3, num_workers=4, batch_size=16, version='12', visual_extractor='resnet101', visual_extractor_pretrained=True, pretrain_cnn_file=None, d_model=512, d_ff=512, d_vf=2048, num_heads=8, num_memory_heads=8, num_layers=3, num_labels=14, dropout=0.1, logit_layers=1, bos_idx=0, eos_idx=0, pad_idx=0, use_bn=0, drop_prob_lm=0.1, sample_method='beam_search', beam_size=3, temperature=1.0, sample_n=1, group_size=1, output_logsoftmax=1, decoding_constraint=0, block_trigrams=1, n_gpu=1, epochs=30, save_dir='results\\mimic_cxr\\V12_resnet101_labelloss_rankloss_2nd_mimic_try_20240308-163420', expe_name='2nd_mimic_try', record_dir='records/', save_period=1, monitor_mode='max', monitor_metric='BLEU_4', early_stop=50, label_smoothing=0.1, alpha=0.5, grad_clip=5, test_steps=500, label_loss=True, rank_loss=True, optim='Adam', lr_ve=5e-05, lr_ed=0.0001, weight_decay=5e-05, amsgrad=True, lr_scheduler='StepLR', step_size=1, gamma=0.8, seed=456789, gpu='0', resume=None, num_slots=60, rm_num_heads=8, rm_d_model=512, cfg='config/mimic_resnet.yml', set_cfgs=[])
+03-08 01:34:29-INFO:Model name: LAMRGModel_v12 	Model Layers:3
+03-08 01:34:30-INFO:==>> Model lr: 0.0001, Visual Encoder lr: 5e-05
+03-08 02:28:39-INFO:Epoch [1/30] - results\mimic_cxr\V12_resnet101_labelloss_rankloss_2nd_mimic_try_20240308-163420
+03-08 02:28:39-INFO:VAL ||| Epoch: 1|||train_loss: 2.723||| BLEU_1: 0.2802 |||BLEU_2: 0.1378 |||BLEU_3: 0.07407 |||BLEU_4: 0.04772 |||CIDEr: 0.05543 |||ROUGE_L: 0.2108
+03-08 02:28:39-INFO:TEST || Epoch: 1|||train_loss: 2.723||| BLEU_1: 0.2951 |||BLEU_2: 0.1429 |||BLEU_3: 0.07342 |||BLEU_4: 0.04545 |||CIDEr: 0.0523 |||ROUGE_L: 0.2114
+03-08 02:28:55-INFO:Saving current best: model_best.pth ...
+03-08 02:28:55-INFO:==>> Model lr: 8e-05, Visual Encoder lr: 4e-05
+03-08 03:33:18-INFO:Epoch [2/30] - results\mimic_cxr\V12_resnet101_labelloss_rankloss_2nd_mimic_try_20240308-163420
+03-08 03:33:18-INFO:VAL ||| Epoch: 2|||train_loss: 2.061||| BLEU_1: 0.2328 |||BLEU_2: 0.1234 |||BLEU_3: 0.06825 |||BLEU_4: 0.0418 |||CIDEr: 0.03685 |||ROUGE_L: 0.205
+03-08 03:33:18-INFO:TEST || Epoch: 2|||train_loss: 2.061||| BLEU_1: 0.2446 |||BLEU_2: 0.1294 |||BLEU_3: 0.07068 |||BLEU_4: 0.04358 |||CIDEr: 0.05765 |||ROUGE_L: 0.2063
+03-08 03:33:22-INFO:==>> Model lr: 6.4e-05, Visual Encoder lr: 3.2e-05

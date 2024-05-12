@@ -1,0 +1,9 @@
+_BASE_: iu.yml
+
+# Visual Extractor
+visual_extractor: openai-clip
+pretrain_cnn_file:
+d_vf: 512
+
+# Output Dir
+save_dir: results
